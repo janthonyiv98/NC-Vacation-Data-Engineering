@@ -1,14 +1,9 @@
-# Project_3
+DAY 1
+Topic: Weather Data Logger / *"North Carolina Elemental Excursions: Embrace the Weather in Every Step
 
-The GitHub repo has a README.md that includes the following: (10 points)
+Dataset: Open-Meteo
+https://open-meteo.com/en/docs/historical-weather-api/
 
-An overview of the project and its purpose
+Proposal: "North Carolina Elemental Excursions: Embrace the Weather in Every Step" is an ambitious and innovative data analysis project that seeks to revolutionize the way individuals plan and experience their journeys. At its core, the project aims to seamlessly integrate weather data into the travel planning process, offering users a comprehensive and personalized understanding of weather conditions throughout their excursions.
 
-Instructions on how to use and interact with the project
-
-At least one paragraph summarizing efforts for ethical considerations made in the project
-
-References for the data source(s)
-
-References for any code used that is not your own
-
+Primary Github repository : https://github.com/janthonyiv98/Project_3
