@@ -1,4 +1,3 @@
-DAY 1
 Topic: Weather Data Logger / *"North Carolina Elemental Excursions: Embrace the Weather in Every Step
 
 Dataset: Open-Meteo
