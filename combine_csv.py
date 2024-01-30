@@ -22,18 +22,18 @@ for csv in csv_files:
 
 
         # add identifier numbers
-        df.loc[df['name'].str.contains('Asheville', case=False, na=False), 'Primary Key'] = 'nc01'
-        df.loc[df['name'].str.contains('Banner Elk', case=False, na=False), 'Primary Key'] = 'nc02'
-        df.loc[df['name'].str.contains('Boone', case=False, na=False), 'Primary Key'] = 'nc03'
-        df.loc[df['name'].str.contains('Charlotte', case=False, na=False), 'Primary Key'] = 'nc04'
-        df.loc[df['name'].str.contains('Cherokee', case=False, na=False), 'Primary Key'] = 'nc05'
-        df.loc[df['name'].str.contains('Emerald Isle', case=False, na=False), 'Primary Key'] = 'nc06'
-        df.loc[df['name'].str.contains('High Point', case=False, na=False), 'Primary Key'] = 'nc07'
-        df.loc[df['name'].str.contains('Nags Head', case=False, na=False), 'Primary Key'] = 'nc08'
-        df.loc[df['name'].str.contains('Ocracoke', case=False, na=False), 'Primary Key'] = 'nc09'
-        df.loc[df['name'].str.contains('raleigh', case=False, na=False), 'Primary Key'] = 'nc10'
-        df.loc[df['name'].str.contains('Wilmington', case=False, na=False), 'Primary Key'] = 'nc11'
-        df.loc[df['name'].str.contains('Winston-Salem', case=False, na=False), 'Primary Key'] = 'nc12'
+        df.loc[df['name'].str.contains('Asheville', case=False, na=False), 'NC_ID'] = 'nc01'
+        df.loc[df['name'].str.contains('Banner Elk', case=False, na=False), 'NC_ID'] = 'nc02'
+        df.loc[df['name'].str.contains('Boone', case=False, na=False), 'NC_ID'] = 'nc03'
+        df.loc[df['name'].str.contains('Charlotte', case=False, na=False), 'NC_ID'] = 'nc04'
+        df.loc[df['name'].str.contains('Cherokee', case=False, na=False), 'NC_ID'] = 'nc05'
+        df.loc[df['name'].str.contains('Emerald Isle', case=False, na=False), 'NC_ID'] = 'nc06'
+        df.loc[df['name'].str.contains('High Point', case=False, na=False), 'NC_ID'] = 'nc07'
+        df.loc[df['name'].str.contains('Nags Head', case=False, na=False), 'NC_ID'] = 'nc08'
+        df.loc[df['name'].str.contains('Ocracoke', case=False, na=False), 'NC_ID'] = 'nc09'
+        df.loc[df['name'].str.contains('raleigh', case=False, na=False), 'NC_ID'] = 'nc10'
+        df.loc[df['name'].str.contains('Wilmington', case=False, na=False), 'NC_ID'] = 'nc11'
+        df.loc[df['name'].str.contains('Winston-Salem', case=False, na=False), 'NC_ID'] = 'nc12'
 
         df_list.append(df)
            
