@@ -51,5 +51,8 @@ for csv in csv_files:
 # Concatenate all data into one DataFrame
 combined_df = pd.concat(df_list, ignore_index=True)
 
+# create a new index
+combined_df["id"] = combined_df.index + 1
+
 # Save the final result to a new CSV file
 combined_df.to_csv(os.path.join(folder_path, 'combined_file.csv'), index=False)
