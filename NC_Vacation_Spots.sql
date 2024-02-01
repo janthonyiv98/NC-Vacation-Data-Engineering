@@ -4,7 +4,7 @@ CREATE TABLE Coordinates (
     city_id VARCHAR(4) NOT NULL,
     City VARCHAR(30) NOT NULL,
     Latitude DECIMAL NOT NULL,
-    Longitude DECIMAL NOT NULL
+    Longitude DECIMAL NOT NULL,
     PRIMARY KEY (city_id)
 );
 
