@@ -30,25 +30,31 @@ for csv in csv_files:
     except Exception as e:
         print(f"Could not read file {csv} because of error: {e}")
 
-# Concatenate all data into one DataFrame
+# concatenate all data into one DataFrame
 combined_df = pd.concat(df_list, ignore_index=True)
 
 # create a new index
 combined_df["id"] = combined_df.index + 1
 
- # add identifier numbers
-combined_df.loc[combined_df['name'].str.contains('Asheville', case=False, na=False), 'NC_ID'] = 'nc01'
-combined_df.loc[combined_df['name'].str.contains('Banner Elk', case=False, na=False), 'NC_ID'] = 'nc02'
-combined_df.loc[combined_df['name'].str.contains('Boone', case=False, na=False), 'NC_ID'] = 'nc03'
-combined_df.loc[combined_df['name'].str.contains('Charlotte', case=False, na=False), 'NC_ID'] = 'nc04'
-combined_df.loc[combined_df['name'].str.contains('Cherokee', case=False, na=False), 'NC_ID'] = 'nc05'
-combined_df.loc[combined_df['name'].str.contains('Emerald Isle', case=False, na=False), 'NC_ID'] = 'nc06'
-combined_df.loc[combined_df['name'].str.contains('High Point', case=False, na=False), 'NC_ID'] = 'nc07'
-combined_df.loc[combined_df['name'].str.contains('Nags Head', case=False, na=False), 'NC_ID'] = 'nc08'
-combined_df.loc[combined_df['name'].str.contains('Ocracoke', case=False, na=False), 'NC_ID'] = 'nc09'
-combined_df.loc[combined_df['name'].str.contains('raleigh', case=False, na=False), 'NC_ID'] = 'nc10'
-combined_df.loc[combined_df['name'].str.contains('Wilmington', case=False, na=False), 'NC_ID'] = 'nc11'
-combined_df.loc[combined_df['name'].str.contains('Winston-Salem', case=False, na=False), 'NC_ID'] = 'nc12'
+# create a dictionary for city names to NC_ID
+city_mapping = {
+    'Asheville': 'nc01',
+    'Banner Elk': 'nc02',
+    'Boone': 'nc03',
+    'Charlotte': 'nc04',
+    'Cherokee': 'nc05',
+    'Emerald Isle': 'nc06',
+    'High Point': 'nc07',
+    'Nags Head': 'nc08',
+    'Ocracoke': 'nc09',
+    'Raleigh': 'nc10',
+    'Wilmington': 'nc11',
+    'Winston-Salem': 'nc12'
+}
+
+# iterate through the cities and update the 'NC_ID' column
+for city, nc_id in city_mapping.items():
+    combined_df.loc[combined_df['name'].str.contains(city, case=False, na=False), 'NC_ID'] = nc_id
 
 # Move columns to front
 first_column = combined_df.pop('id')
