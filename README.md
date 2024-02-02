@@ -1,9 +1,9 @@
-Topic: Weather Data Logger / *"North Carolina Elemental Excursions: Embrace the Weather in Every Step
+# Topic: Weather Data Logger / "North Carolina Elemental Excursions: Embrace the Weather in Every Step
 
-Dataset: Open-Meteo
-https://open-meteo.com/en/docs/historical-weather-api/
+Dataset: Visual Crossing
+[https://open-meteo.com/en/docs/historical-weather-api/](https://www.visualcrossing.com/weather-api)
 
-Proposal: "North Carolina Elemental Excursions: Embrace the Weather in Every Step" is an ambitious and innovative data analysis project that seeks to revolutionize the way individuals plan and experience their journeys. At its core, the project aims to seamlessly integrate weather data into the travel planning process, offering users a comprehensive and personalized understanding of weather conditions throughout their excursions.
+  This analysis provides valuable insights into the climatic conditions experienced throughout the year, offering a comprehensive perspective for planning a trip to North Carolina. Seasonal averages were meticulously calculated for key meteorological parameters, allowing travelers to understand the nuanced weather dynamics. During the spring season (March 20 to June 21), temperatures in North Carolina tend to rise, accompanied by moderate humidity levels and occasional precipitation, creating a vibrant and comfortable atmosphere. The summer months (June 21 to September 23) bring warmer temperatures, higher humidity, and potential variations in precipitation, creating an ideal environment for outdoor activities. Fall (September 22 to December 21) is characterized by decreasing temperatures, stable humidity, and potential changes in precipitation patterns, providing a picturesque backdrop of colorful foliage. As winter sets in (December 21 to March 19), North Carolina experiences cooler temperatures, lower humidity, and the possibility of snowfall, offering a unique winter experience. This tailored analysis empowers travelers, researchers, and weather enthusiasts alike to make informed decisions and appreciate the diverse weather conditions across North Carolina's cities.
 
 ## Database Design
 
