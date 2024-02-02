@@ -1,4 +1,4 @@
-# Topic: Weather Data Logger / "North Carolina Elemental Excursions: Embrace the Weather in Every Step
+# Weather Data Logger / "North Carolina Elemental Excursions: Embrace the Weather in Every Step
 
 Dataset: Visual Crossing
 [https://open-meteo.com/en/docs/historical-weather-api/](https://www.visualcrossing.com/weather-api)
