@@ -3,7 +3,6 @@
 This analysis provides valuable insights into the climatic conditions experienced throughout the year, offering a comprehensive perspective for planning a trip to North Carolina. Seasonal averages were meticulously calculated for key meteorological parameters, allowing travelers to understand the nuanced weather dynamics. During the spring season (March 20 to June 21), temperatures in North Carolina tend to rise, accompanied by moderate humidity levels and occasional precipitation, creating a vibrant and comfortable atmosphere. The summer months (June 21 to September 23) bring warmer temperatures, higher humidity, and potential variations in precipitation, creating an ideal environment for outdoor activities. Fall (September 22 to December 21) is characterized by decreasing temperatures, stable humidity, and potential changes in precipitation patterns, providing a picturesque backdrop of colorful foliage. As winter sets in (December 21 to March 19), North Carolina experiences cooler temperatures, lower humidity, and the possibility of snowfall, offering a unique winter experience. This tailored analysis empowers travelers, researchers, and weather enthusiasts alike to make informed decisions and appreciate the diverse weather conditions across North Carolina's cities.
 
 ## Data Sources
-
 * [Visual Crossing](https://www.visualcrossing.com/weather-api)
   * Downloaded a year's worth of climate data from 12 NC cities as CSVs.
 * [Google Maps](https://maps.google.com/)
@@ -11,7 +10,6 @@ This analysis provides valuable insights into the climatic conditions experience
 
 
 ## Database Design
-
 For our Coordinates table, we first gathered the Latitude and Longitude of each city selected using data from Google Maps, and stored that data in a CSV. We then added a primary key distinguishing each city (nc01 - nc12). This file is located in the main repo under `NC_Coordinate_Data.csv`.
 
 For our Climate table, we retrieved the CSVs for each of the cities and stored them in our repo under the folder `2023_Weather_Data`. From there we combined the CSVs into one large Pandas DataFrame. From there we added the foreign key to each record based on the city. We then added a unique identifier to each record to be the climate table's primary key. This ETL process can be found in the `combine_csv.py` code file in the main repo. The resulting file, also in the main repo is titled `combined_data.csv`.
@@ -21,6 +19,9 @@ We then chose to store our data using postgreSQL. We chose SQL over noSQL since 
 
 ### Ethical Considerations
 We specifically chose datasets that were free to access and use. Our use of the [Google Maps](https://about.google/brand-resource-center/products-and-services/geo-guidelines/#:~:text=Google%20Earth%20or%20Earth%20Studio%20can%20be%20used%20for%20purposes,any%20commercial%20or%20promotional%20purposes.) and [Visual Crossing](https://www.visualcrossing.com/weather-services-terms) data falls under the Fair Use of both of their Terms of Use, as this was an academic project. This data involves no Peronally Identifiable Information.
+
+### Data Limitations
+We were only able to get a year's worth of data for 12 cities from Visual Crossing, as part of their unpaid tier. With more historical data, we could offer better recommendations.
 
 ## Visualizations
 
