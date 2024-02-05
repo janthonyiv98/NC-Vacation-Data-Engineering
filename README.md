@@ -15,6 +15,7 @@ For our Climate table, we retrieved the CSVs for each of the cities and stored t
 We then chose to store our data using postgreSQL. We chose SQL over noSQL since all of our data here is tabular, and was downloaded as CSVs. That made the upload into postgreSQL simple. Our Coordinates table is linked to the Climate table using the NC_ID. That can be seen in the ERD found in the repo (Weather_ERD.png).
 
 Primary Github repository : https://github.com/janthonyiv98/Project_3
+Resource used: https://raredogmarketing.com/resources/combining-multiple-csv-files-into-one-file-using-python-step-by-step-guide
 
 ## Visualizations
 
