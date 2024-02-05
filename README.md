@@ -11,11 +11,11 @@ This analysis provides valuable insights into the climatic conditions experience
 
 ## Database Design
 
-For our Coordinates table, we first gathered the Latitude and Longitude of each city selected using data from Google Maps, and stored that data in a CSV. We then added a primary key distinguishing each city (nc01 - nc12).
+For our Coordinates table, we first gathered the Latitude and Longitude of each city selected using data from Google Maps, and stored that data in a CSV. We then added a primary key distinguishing each city (nc01 - nc12). This file is located in the main repo under `NC_Coordinate_Data.csv`.
 
-For our Climate table, we retrieved the CSVs for each of the cities and stored them in our repo. From there we combined the CSVs into one large Pandas DataFrame. From there we added the foreign key to each record based on the city. We then added a unique identifier to each record to be the climate table's primary key.
+For our Climate table, we retrieved the CSVs for each of the cities and stored them in our repo under the folder `2023_Weather_Data`. From there we combined the CSVs into one large Pandas DataFrame. From there we added the foreign key to each record based on the city. We then added a unique identifier to each record to be the climate table's primary key. This ETL process can be found in the `combine_csv.py` code file in the main repo. The resulting file, also in the main repo is titled `combined_data.csv`.
 
-We then chose to store our data using postgreSQL. We chose SQL over noSQL since all of our data here is tabular, and was downloaded as CSVs. That made the upload into postgreSQL simple. The schema code can be found in the main repo under NC_Vacation_Spots.sql. Our Coordinates table is linked to the Climate table using the NC_ID. That can be seen in the ERD found in the repo (Weather_ERD.png).
+We then chose to store our data using postgreSQL. We chose SQL over noSQL since all of our data here is tabular, and was downloaded as CSVs. That made the upload into postgreSQL simple. The schema code can be found in the main repo under `NC_Vacation_Spots.sql`. Our Coordinates table is linked to the Climate table using the NC_ID. That can be seen in the ERD found in the repo `Weather_ERD.png`.
 
 Primary Github repository : https://github.com/janthonyiv98/Project_3
 Resource used: https://raredogmarketing.com/resources/combining-multiple-csv-files-into-one-file-using-python-step-by-step-guide
