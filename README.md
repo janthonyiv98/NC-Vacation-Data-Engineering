@@ -5,9 +5,9 @@ This analysis provides valuable insights into the climatic conditions experience
 ## Data Sources
 
 * [Visual Crossing](https://www.visualcrossing.com/weather-api)
-** Downloaded a year's worth of climate data from 12 NC cities as CSVs.
+  * Downloaded a year's worth of climate data from 12 NC cities as CSVs.
 * [Google Maps](https://maps.google.com/)
-** Retrieved coordinate data for the 12 NC cities, and stored as a CSV.
+  * Retrieved coordinate data for the 12 NC cities, and stored as a CSV.
 
 ## Database Design
 
