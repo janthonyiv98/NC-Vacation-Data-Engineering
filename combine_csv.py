@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 
+# Code inspired by: https://raredogmarketing.com/resources/combining-multiple-csv-files-into-one-file-using-python-step-by-step-guide
 # create path to csv files in 2023 Weather Data folder
 project_folder = os.path.dirname(os.path.realpath(__file__))
 folder_path = os.path.join(project_folder, '2023_Weather_Data')
