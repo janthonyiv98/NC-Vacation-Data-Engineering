@@ -9,16 +9,18 @@ This analysis provides valuable insights into the climatic conditions experience
 * [Google Maps](https://maps.google.com/)
   * Retrieved coordinate data for the 12 NC cities, and stored as a CSV.
 
+
 ## Database Design
 
 For our Coordinates table, we first gathered the Latitude and Longitude of each city selected using data from Google Maps, and stored that data in a CSV. We then added a primary key distinguishing each city (nc01 - nc12). This file is located in the main repo under `NC_Coordinate_Data.csv`.
 
 For our Climate table, we retrieved the CSVs for each of the cities and stored them in our repo under the folder `2023_Weather_Data`. From there we combined the CSVs into one large Pandas DataFrame. From there we added the foreign key to each record based on the city. We then added a unique identifier to each record to be the climate table's primary key. This ETL process can be found in the `combine_csv.py` code file in the main repo. The resulting file, also in the main repo is titled `combined_data.csv`.
+ * Resource used: https://raredogmarketing.com/resources/combining-multiple-csv-files-into-one-file-using-python-step-by-step-guide
 
 We then chose to store our data using postgreSQL. We chose SQL over noSQL since all of our data here is tabular, and was downloaded as CSVs. That made the upload into postgreSQL simple. The schema code can be found in the main repo under `NC_Vacation_Spots.sql`. Our Coordinates table is linked to the Climate table using the NC_ID. That can be seen in the ERD found in the repo `Weather_ERD.png`.
 
-Primary Github repository : https://github.com/janthonyiv98/Project_3
-Resource used: https://raredogmarketing.com/resources/combining-multiple-csv-files-into-one-file-using-python-step-by-step-guide
+### Ethical Considerations
+We specifically chose datasets that were free to access and use. Our use of the [Google Maps](https://about.google/brand-resource-center/products-and-services/geo-guidelines/#:~:text=Google%20Earth%20or%20Earth%20Studio%20can%20be%20used%20for%20purposes,any%20commercial%20or%20promotional%20purposes.) and [Visual Crossing](https://www.visualcrossing.com/weather-services-terms) data falls under the Fair Use of both of their Terms of Use, as this was an academic project. This data involves no Peronally Identifiable Information.
 
 ## Visualizations
 
@@ -28,4 +30,6 @@ We also created bar graphs detailing the number of rainy and snowy days experien
 
 In addition, we generated heat maps displaying the seasonal average temperatures of these cities. We restructured the data utilizing Pandas to tailor DataFrames as needed and explored Seaborn, a new library, to build these vibrant graphs. ​Seaborn, renowned for its thorough documentation, offers a variety of engaging options for statistical data visualization. It provides a user-friendly installation process and furnishes robust tools for developing intricate statistical analyses.
 
-For further information, please refer to:  https://seaborn.pydata.org/index.html
+For further information, please refer to: https://seaborn.pydata.org/index.html.
+
+Primary Github repository : https://github.com/janthonyiv98/Project_3
