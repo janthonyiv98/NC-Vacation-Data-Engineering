@@ -15,3 +15,9 @@ For our Climate table, we retrieved the CSVs for each of the cities and stored t
 We then chose to store our data using postgreSQL. We chose SQL over noSQL since all of our data here is tabular, and was downloaded as CSVs. That made the upload into postgreSQL simple. Our Coordinates table is linked to the Climate table using the NC_ID. That can be seen in the ERD found in the repo (Weather_ERD.png).
 
 Primary Github repository : https://github.com/janthonyiv98/Project_3
+
+## Visualizations
+
+Using MatPlotLib and Python functions we learned earlier in the bootcamp, we created simple visualizations to aid in the decision-making process for vacationers in North Carolina. The first of these visualizations was a line chart comparing the average daily temperatures across the entirety of 2023 for the cities in our list. Adding an extra layer of customization, we used Python to create a basic app where the user inputs three cities of their choice from the group of 12 to further tailor the line chart to their potential plans. This was accomplished using input functions and then combining the three responses into a single variable to create a new filtered DataFrame and graph focused on the selected cities. In the Jupyter Notebook found in our repository, you can find an example of a temperature comparison between Boone, Charlotte and Wilmington.
+
+We also created bar graphs detailing the number of rainy and snowy days experienced by each of our cities in 2023, giving further context to the type of weather vacationers may come to expect at various North Carolina destinations. This was done by tapping into the "icon" column in our CSV file, which noted the prevailing weather condition for each given day (i.e. sunny, partly cloudy, rain, snow, etc.).
