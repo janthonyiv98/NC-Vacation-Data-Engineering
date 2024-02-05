@@ -43,6 +43,9 @@ In addition, we generated heat maps displaying the seasonal average temperatures
 ## Primary Github repository
 * https://github.com/janthonyiv98/Project_3
 
+## Presentation Slides
+* Can be found in the main repo under `Project 3 - NC Elemental Excursions.pdf`.
+
 ## Group Members
 * Joseph Anthony
 * Everette Gough
