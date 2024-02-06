@@ -45,6 +45,7 @@ In addition, we generated heat maps displaying the seasonal average temperatures
 
 ## Presentation Slides
 * Can be found in the main repo under `Project 3 - NC Elemental Excursions.pdf`.
+ * Slides were powered by [Canva](https://www.canva.com/).
 
 ## Group Members
 * Joseph Anthony
